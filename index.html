@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app>
   <head>
     <meta charset="utf-8">
-    <title>Template &middot; Bootstrap</title>
+    <title>Group Four</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -47,6 +47,13 @@
       }
     </style>
     <link href="docs/assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="docs/assets/css/custom.css" rel="stylesheet">
+
+    <script src="docs/assets/js/jquery.js"></script>
+    <script src="docs/assets/js/bootstrap.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.4/angular.min.js"></script>
+    <script src="docs/assets/js/comments.js"></script>
+    <script src="docs/assets/js/mongolab.js"></script>
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -62,60 +69,48 @@
 
   <body>
 
-    <div class="container-narrow">
+    <div class="container">
 
       <div class="masthead">
         <ul class="nav nav-pills pull-right">
-          <li class="active"><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
+          <li class="active"><a href="#">Brian</a></li>
+          <li><a href="#">Ryan</a></li>
+          <li><a href="#">Jace</a></li>
         </ul>
-        <h3 class="muted">Project name</h3>
+        <h3 class="muted">Group Four</h3>
       </div>
 
       <hr>
 
       <div class="jumbotron">
-        <h1>Super awesome marketing speak!</h1>
+        <h1>Week Five Homework</h1>
         <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-        <a class="btn btn-large btn-success" href="#">Sign up today</a>
       </div>
 
       <hr>
 
-      <div class="row-fluid marketing">
-        <div class="span6">
-          <h4>Subheading</h4>
-          <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+      <div ng-controller="CommentsCtrl" class="row-fluid marketing">
+        <div class="span6 offset3">
+          <div class="comment" ng-repeat="comment in comments">
+            <p>{{comment.text}}</p>
+          </div>
 
-          <h4>Subheading</h4>
-          <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
+          <hr>
 
-          <h4>Subheading</h4>
-          <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
-        </div>
-
-        <div class="span6">
-          <h4>Subheading</h4>
-          <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
-
-          <h4>Subheading</h4>
-          <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
-
-          <h4>Subheading</h4>
-          <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+          <form ng-submit="addComment()">
+            <textarea ng-model="commentText" class="input-block-level" placeholder="Leave a comment..." rows="3"></textarea>
+            <input type="submit" class="btn btn-primary btn-block" value="Comment">
+          </form> 
         </div>
       </div>
 
       <hr>
 
       <div class="footer">
-        <p>&copy; Company 2013</p>
+        <p>&copy; Group Four 2013</p>
       </div>
 
     </div> 
-    <script src="docs/assets/js/jquery.js"></script>
-    <script src="../assets/js/bootstrap.min.js"></script>
 
   </body>
 </html>

@@ -1,0 +1,12 @@
+.comment {
+  background-color: rgba(0,0,0,.1);
+  padding: 10px 20px;
+  border: 1px dotted #ccc;
+  -webkit-border-radius: 6px;
+     -moz-border-radius: 6px;
+          border-radius: 6px;
+}
+
+.comment + .comment {
+  margin: 10px 0;
+}
