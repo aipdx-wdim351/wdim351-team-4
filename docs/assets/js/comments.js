@@ -1,7 +1,7 @@
 function CommentsCtrl($scope) {
-  $scope.comments = [
+/*  $scope.comments = [
     {text:'Amaaaaaaaaaazing'},
-    {text:'What is this crap?!'}];
+    {text:'What is this crap?!'}];*/
  
   $scope.addComment = function() {
     $scope.comments.push({text:$scope.commentText});
