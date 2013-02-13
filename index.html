@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app>
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <title>Group Four</title>
@@ -52,8 +52,30 @@
     <script src="docs/assets/js/jquery.js"></script>
     <script src="docs/assets/js/bootstrap.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.4/angular.min.js"></script>
-    <script src="docs/assets/js/comments.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.4/angular-resource.js"></script>
     <script src="docs/assets/js/mongolab.js"></script>
+
+    <script type="text/javascript">
+
+      var app = angular.module('app', ['mongolabResource']);
+
+      app.constant('API_KEY', 'rFPd1l3nT5_5AhS9IplSXgdECvyBUcCn');
+      app.constant('DB_NAME', 'klutzy-kalyn');
+
+      app.factory('Comment', function ($mongolabResource) {
+        return $mongolabResource('comments');
+      });
+
+      app.controller('AppController', function ($scope, Comment) {
+        $scope.comments = Comment.query();
+
+        $scope.addComment = function() {
+          $scope.comments = Comment.save({text:$scope.commentText});
+          $scope.comments = Comment.query();
+        };
+      });
+
+    </script>
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -67,7 +89,7 @@
                     <link rel="apple-touch-icon-precomposed" href="docs/assets/ico/apple-touch-icon-57-precomposed.png">
   </head>
 
-  <body>
+  <body ng-app="app">
 
     <div class="container">
 
@@ -89,7 +111,7 @@
 
       <hr>
 
-      <div ng-controller="CommentsCtrl" class="row-fluid marketing">
+      <div ng-controller="AppController" class="row-fluid marketing">
         <div class="span6 offset3">
           <div class="comment" ng-repeat="comment in comments">
             <p>{{comment.text}}</p>
