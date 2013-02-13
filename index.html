@@ -26,12 +26,17 @@
 
       /* Main marketing message and sign up button */
       .jumbotron {
-        margin: 60px 0;
+        margin: 0;
         text-align: center;
       }
       .jumbotron h1 {
-        font-size: 72px;
+        font-size: 36px;
         line-height: 1;
+      }
+      .jumbotron p {
+        font-size: 16px;
+        line-height: 1.5;
+        padding-right: 20px;
       }
       .jumbotron .btn {
         font-size: 21px;
@@ -96,23 +101,23 @@
       <div class="masthead">
         <ul class="nav nav-pills pull-right">
           <li class="active"><a href="#">Brian</a></li>
-          <li><a href="#">Ryan</a></li>
-          <li><a href="#">Jace</a></li>
+          <li class="active"><a href="#">Ryan</a></li>
+          <li class="active"><a href="#">Jace</a></li>
         </ul>
         <h3 class="muted">Group Four</h3>
       </div>
 
       <hr>
 
-      <div class="jumbotron">
+      <div class="jumbotron span8">
         <h1>Week Five Homework</h1>
         <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
       </div>
 
       <hr>
 
-      <div ng-controller="AppController" class="row-fluid marketing">
-        <div class="span6 offset3">
+      <div ng-controller="AppController" class="row-fluid">
+        <div class="span4">
           <div class="comment" ng-repeat="comment in comments">
             <p>{{comment.text}}</p>
           </div>
@@ -121,17 +126,10 @@
 
           <form ng-submit="addComment()">
             <textarea ng-model="commentText" class="input-block-level" placeholder="Leave a comment..." rows="3"></textarea>
-            <input type="submit" class="btn btn-primary btn-block" value="Comment">
+            <input type="submit" class="btn btn-large btn-primary btn-block" value="Comment">
           </form> 
         </div>
       </div>
-
-      <hr>
-
-      <div class="footer">
-        <p>&copy; Group Four 2013</p>
-      </div>
-
     </div> 
 
   </body>
