@@ -82,6 +82,10 @@
 
     </script>
 
+    <script type="text/javascript">
+      $('.span4').affix(offset: { x: 620 });
+    </script>
+
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
       <script src="docs/assets/js/html5shiv.js"></script>
@@ -111,13 +115,17 @@
 
       <div class="jumbotron span8">
         <h1>Week Five Homework</h1>
-        <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+        <p class="lead">We will be changing the verboseness of the main navigation. In order to do this we will be removing the drop down menus and incorporating any sub pages that contain any important content in to the layout of the revamp pages. This will help with overall content strategy and maintaining relative information for page uniqueness (SEO stuff). We will also be cutting the main navigation down to six and editing the link names to be more precise and informative. The six links will be; Home, About, FAQ, ActivTrax, Services, and Contact (the order is not currently set as content strategy will play a role in that).</p>
+        <p class="lead">There is a lot of unused and misused real estate on the current site. Restructuring the layout so that the logo and global nav at the top will allow us to create a few conversion points to catch the clients attention. The newsletter sign up as well as the 7 day pass signup will be moved near the top of the page and brought to the attention of the visitor.</p>
+        <p class="lead">The layout will be getting the biggest overhaul as far as the new look of the site. Starting from the very top of the page; Instead of the text “Hollywood Fitness (formerly Giant’s Gym)” above the main navigation, replace it with a smaller version of the logo and remove the enormous logo that currently sits under the main navigation. Where the social media links currently sit on the page, there will be a search bar and button that will take their place. As well as a login area for members.</p>
+        <p class="lead">Main navigation will keep its placement on the page, but will have a complete visual overhaul (along with changes discussed before). Since the overly large logo will be no more, we will be placing call-to-actions in its place. These call-to-actions will be there to entice visitors with a 7-day free pass and an opt-in for newsletters. Also, the sidebar is gone (in my opinion) and with the extra content, we can utilize the real-estate that its absence gives us.</p>
+        <p class="lead">The footer will be a proper footer and this is where the social media links will be moved. Possibly a fat-footer if there is enough important content that will benefit from being on every page.</p>
+        <p class="lead">This is where we say “we’ll do our best” but it still will not be enough. If we are going to be direct, the fact that there is an already established “Hollywood Fitness” gym that uses the url hollywoodfitness.com will make it difficult rank higher in page and SERP ranking. On the bright side, we will have unique and cohesive content laid out properly on the page and with well implemented marketing campaigns we will still see promising results.</p>
+        <p class="lead">Also, utilizing Google’s and Bing’s webmaster tools, Google Analytics, and sitemap generators will help in this pursuit. With all of these things in place and keeping continuous stimulation in social media, the backlinks and in turn page rankings will come over time.</p>
       </div>
 
-      <hr>
-
       <div ng-controller="AppController" class="row-fluid">
-        <div class="span4">
+        <div class="span4" data-spy="affix">
           <div class="comment" ng-repeat="comment in comments">
             <p>{{comment.text}}</p>
           </div>
