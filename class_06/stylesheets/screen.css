@@ -58,23 +58,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-.container {
-  width: 1024px;
-  margin: 0 auto;
-}
-
+/*  START Header / Footer  */
 .header {
   background-color: #eeeeee;
   padding: 7px 0;
-}
-
-.header:after {
-  visibility: hidden;
-  display: block;
-  font-size: 0;
-  content: " ";
-  clear: both;
-  height: 0;
 }
 
 .social-links {
@@ -94,15 +81,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   -moz-transition: all 0.4s;
   transition: all 0.4s;
 }
-
 .s-link:first-child {
   margin-right: 7px;
 }
-
 .s-link:last-child {
   margin-left: 7px;
 }
-
 .s-link:hover {
   background: #333333;
 }
@@ -118,7 +102,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   -moz-transition: all 0.4s;
   transition: all 0.4s;
 }
-
 .login:hover {
   color: #d81417;
 }
@@ -149,15 +132,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   -moz-transition: all 0.4s;
   transition: all 0.4s;
 }
-
 .nav-link:first-child {
   padding-left: 0;
 }
-
 .nav-link:last-child {
   border-right: none;
 }
-
 .nav-link:hover {
   color: #fdd017;
 }
@@ -175,6 +155,18 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   margin-top: -40px;
 }
 
+.footer {
+  height: 350px;
+  background-color: #999999;
+}
+
+/*  END Header / Footer  */
+/*  START Home Page  */
+.container {
+  width: 1024px;
+  margin: 0 auto;
+}
+
 .sidebar {
   width: 320px;
   height: 400px;
@@ -183,6 +175,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   background: #aaaaaa;
   float: left;
 }
+.sidebar.small {
+  height: 100px;
+}
 
 .feature {
   width: 684px;
@@ -190,6 +185,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   margin-top: 40px;
   background-color: #1b1b1b;
   float: left;
+}
+.feature.small {
+  height: 100px;
 }
 
 .third {
@@ -200,7 +198,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   float: left;
   margin-left: 31px;
 }
-
 .third:first-child {
   margin-left: 0;
 }
@@ -212,11 +209,32 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   background-color: #1b1b1b;
 }
 
-.footer {
-  height: 350px;
-  background-color: #999999;
+/*  END Home Page  */
+/*  START Blog Page  */
+.post {
+  width: 684px;
+  height: 250px;
+  margin-top: 40px;
+  background-color: #444444;
+  float: left;
+}
+.post.bottom {
+  margin-bottom: 40px;
 }
 
+.post-img {
+  width: 320px;
+  height: 250px;
+  margin-top: 40px;
+  margin-left: 20px;
+  background-color: #777777;
+  float: left;
+}
+.post-img.bottom {
+  margin-bottom: 40px;
+}
+
+/*  END Blog Page  */
 .clearfix:after {
   visibility: hidden;
   display: block;
