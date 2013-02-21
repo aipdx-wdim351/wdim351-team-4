@@ -6,7 +6,7 @@
 @import compass/reset
   
 .container
-  max-width: 1024px
+  width: 1024px
   margin: 0 auto
 
 .header
@@ -101,11 +101,51 @@
   line-height: 60px
   text-align: center
   color: #fff
-  background-color: #ccc
+  background-color: #1b1b1b
   float: right
   margin-top: -40px
 
+.sidebar
+  width: 320px
+  height: 400px
+  margin-top: 20px
+  margin-left: 20px
+  background: #aaa
+  float: left
+
+.feature
+  width: 684px
+  height: 400px
+  margin-top: 40px
+  background-color: #1b1b1b  
+  float: left
+
+.third
+  width: 320px
+  height: 300px
+  margin-top: 60px
+  background-color: #333
+  float: left
+  margin-left: 31px
+
+.third:first-child
+  margin-left: 0
+
+.cta 
+  height: 275px
+  width: 874px
+  margin: 60px auto 0
+  background-color: #1b1b1b
+
+
 .footer
-  margin-top: 450px
-  height: 250px
+  height: 350px
   background-color: #999
+
+.clearfix:after 
+  visibility: hidden
+  display: block
+  font-size: 0
+  content: " "
+  clear: both
+  height: 0
