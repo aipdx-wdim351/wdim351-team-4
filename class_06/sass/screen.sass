@@ -145,8 +145,11 @@ $side-width: 320px
   &.services
     background-color: #777
     margin-top: 20px
-  &.services.bottom
-    margin-bottom: 40px
+    &.contact
+      height: 175px
+      margin-top: 40px
+    &.bottom
+      margin-bottom: 40px
 
 .cta 
   height: 275px
@@ -166,6 +169,8 @@ $side-width: 320px
   float: left
   &.bottom
     margin-bottom: 40px
+  &.right
+    float: right
 
 .post-img
   width: $side-width
@@ -176,6 +181,10 @@ $side-width: 320px
   float: left
   &.bottom
     margin-bottom: 40px
+  &.right
+    float: right
+    margin-left: 0px
+    margin-right: 20px
 
 /*  END Blog Page  */
 
@@ -186,3 +195,22 @@ $side-width: 320px
   content: " "
   clear: both
   height: 0
+  
+.wrapper
+  position: relative
+  
+.bg-color
+  height: 385px
+  width: 100%
+  background-color: #e5e5e5
+  position: absolute
+  bottom: 0px
+  z-index: -1
+  
+.map
+  height: 350px
+  border: 45px solid $new-red
+  width: 725px
+  clear: both
+  margin: 0 auto
+  background-color: #fff

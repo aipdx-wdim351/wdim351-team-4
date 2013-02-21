@@ -216,6 +216,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   background-color: #777777;
   margin-top: 20px;
 }
+.third.services.contact {
+  height: 175px;
+  margin-top: 40px;
+}
 .third.services.bottom {
   margin-bottom: 40px;
 }
@@ -239,6 +243,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 .post.bottom {
   margin-bottom: 40px;
 }
+.post.right {
+  float: right;
+}
 
 .post-img {
   width: 320px;
@@ -251,6 +258,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 .post-img.bottom {
   margin-bottom: 40px;
 }
+.post-img.right {
+  float: right;
+  margin-left: 0px;
+  margin-right: 20px;
+}
 
 /*  END Blog Page  */
 .clearfix:after {
@@ -260,4 +272,26 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   content: " ";
   clear: both;
   height: 0;
+}
+
+.wrapper {
+  position: relative;
+}
+
+.bg-color {
+  height: 385px;
+  width: 100%;
+  background-color: #e5e5e5;
+  position: absolute;
+  bottom: 0px;
+  z-index: -1;
+}
+
+.map {
+  height: 350px;
+  border: 45px solid #ed6456;
+  width: 725px;
+  clear: both;
+  margin: 0 auto;
+  background-color: white;
 }
