@@ -38,12 +38,28 @@ p.lead {
 }
 
 .circle {
-  margin: 10px;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 150px;
+  text-align: center;
+  margin:10px;
   height: 150px;
   width: 150px;
-  background-color: blue;
+  background-color: #00adee;
   -webkit-border-radius: 75px;
      -moz-border-radius: 75px;
           border-radius: 75px;
   float: left;
+  -webkit-transition: all .2s;
+     -moz-transition: all .2s;
+          transition: all .2s;
+}
+
+.circle:hover {
+  color: #666;
+  text-decoration: none;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, .4);
+     -moz-box-shadow: 0 0 20px rgba(0, 0, 0, .4);
+          box-shadow: 0 0 20px rgba(0, 0, 0, .4);
 }
