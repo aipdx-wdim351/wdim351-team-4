@@ -60,7 +60,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 /*  START Header / Footer  */
 .header {
-  background-color: #eeeeee;
+  background-color: #ed6456;
   padding: 7px 0;
 }
 
@@ -73,13 +73,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   width: 30px;
   height: 30px;
   background: white;
-  -webkit-border-radius: 15px;
-  -moz-border-radius: 15px;
   border-radius: 15px;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
   float: left;
-  -webkit-transition: all 0.4s;
-  -moz-transition: all 0.4s;
-  transition: all 0.4s;
+  transition: all, 0.4s, linear;
+  -moz-transition: all, 0.4s, linear;
+  -webkit-transition: all, 0.4s, linear;
 }
 .s-link:first-child {
   margin-right: 7px;
@@ -98,9 +98,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   padding-top: 10px;
   padding-right: 15px;
   float: right;
-  -webkit-transition: all 0.4s;
-  -moz-transition: all 0.4s;
-  transition: all 0.4s;
+  transition: all, 0.4s, linear;
+  -moz-transition: all, 0.4s, linear;
+  -webkit-transition: all, 0.4s, linear;
 }
 .login:hover {
   color: #d81417;
@@ -110,9 +110,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   width: 200px;
   height: 30px;
   background: white;
-  -webkit-border-radius: 15px;
-  -moz-border-radius: 15px;
   border-radius: 15px;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
   float: right;
 }
 
@@ -128,9 +128,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   padding: 3px 25px;
   text-decoration: none;
   border-right: 1px solid #eeeeee;
-  -webkit-transition: all 0.4s;
-  -moz-transition: all 0.4s;
-  transition: all 0.4s;
+  transition: all, 0.4s, linear;
+  -moz-transition: all, 0.4s, linear;
+  -webkit-transition: all, 0.4s, linear;
 }
 .nav-link:first-child {
   padding-left: 0;
@@ -224,7 +224,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   height: 275px;
   width: 874px;
   margin: 60px auto 0;
-  background-color: #1b1b1b;
+  background-color: #ed6456;
 }
 
 /*  END Home Page  */
