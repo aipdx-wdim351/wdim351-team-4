@@ -172,11 +172,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   height: 400px;
   margin-top: 20px;
   margin-left: 20px;
-  background: #aaaaaa;
+  background-color: #aaaaaa;
   float: left;
 }
 .sidebar.small {
   height: 100px;
+}
+.sidebar.about-us {
+  height: 250px;
+  background-color: #999999;
+  margin-left: 0;
 }
 
 .feature {
@@ -189,6 +194,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 .feature.small {
   height: 100px;
 }
+.feature.about-blurb {
+  height: 250px;
+  background-color: #cccccc;
+  margin-top: 20px;
+  margin-left: 20px;
+}
 
 .third {
   width: 320px;
@@ -200,6 +211,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 .third:first-child {
   margin-left: 0;
+}
+.third.services {
+  background-color: #777777;
+  margin-top: 20px;
+}
+.third.services.bottom {
+  margin-bottom: 40px;
 }
 
 .cta {
