@@ -36,3 +36,14 @@ p.lead {
   right: 30px;
   left: auto;
 }
+
+.circle {
+  margin: 10px;
+  height: 150px;
+  width: 150px;
+  background-color: blue;
+  -webkit-border-radius: 75px;
+     -moz-border-radius: 75px;
+          border-radius: 75px;
+  float: left;
+}
