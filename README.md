@@ -1,8 +1,7 @@
-<<<<<<< HEAD
 wdim351-team-4
 ==============
 
-Questions for George =========
+Questions for George 
 
 1) What social networks are you looking to leverage?
 
@@ -43,6 +42,5 @@ Questions for George =========
 19) What would you say your current sites weaknesses are?
 
 20) Who will be responsible for updating your site?
-=======
+
 Playing around with Twitter Bootstrap and Angular.js on Pagodabox
->>>>>>> b9505a75a3c2e2d36c037fb6bea5bc352beede21
