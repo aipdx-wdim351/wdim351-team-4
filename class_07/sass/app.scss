@@ -3,6 +3,8 @@
 
 // Comment out this import if you are customizing you imports below
 @import "foundation";
+@import "compass";
+@import "socialicons/*.png";
 
 // ----------------------------------------
 // Import specific parts of Foundation by commenting the import "foundation"
@@ -50,3 +52,84 @@
 
 // Media Queries Overrides
 // @import "foundation/components/modules/mqueries";
+*{
+  @include box-sizing("border-box");
+}
+  
+.social-links{
+  @include inline-block-list(5px);
+}
+
+.s-link{
+  a{
+    @include hide-text();
+    display: block;
+  }
+}
+
+a[href*="facebook"]{
+  @include socialicons-sprite("facebook-32");
+  margin: 6px 0;
+  height: 32px !important;
+  width: 32px;
+  background-color: #fafafa;
+  @include border-radius(1000px);
+  @include transition(all 0.2s ease-out);
+  &:hover{
+    background-color: lighten($topBarBgColor, 10%);
+  }
+}
+
+a[href*="twitter"]{
+  @include socialicons-sprite("twitter-32");
+  margin: 6px 0;
+  height: 32px !important;
+  width: 32px;
+  background-color: #fafafa;
+  @include border-radius(1000px);
+  @include transition(all 0.2s ease-out);
+  &:hover{
+    background-color: lighten($topBarBgColor, 10%);
+  }
+}
+
+a[href*="vimeo"]{
+  @include socialicons-sprite("vimeo-32");
+  margin: 6px 0;
+  height: 32px !important;
+  width: 32px;
+  background-color: #fafafa;
+  @include border-radius(1000px);
+  @include transition(all 0.2s ease-out);
+  &:hover{
+    background-color: lighten($topBarBgColor, 10%);
+  }
+}
+
+input[type="search"]{
+  font-style: italic;
+  &.round { 
+    @include border-radius(1000px); 
+  }
+}
+
+ul.inline-list > li{
+  margin-left: 0;
+  border-right: 1px solid #eee;
+  &:last-child{
+    border-right: none;
+  }
+}
+
+.nav-link{
+  font-size: ms(2);
+  padding: 0 25px;
+  @include transition(all 0.4s);
+  &:hover{
+    color: #fdd017;
+  }
+}
+
+.logo{
+  width: 100%;
+}
