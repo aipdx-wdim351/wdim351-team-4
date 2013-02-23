@@ -153,7 +153,7 @@ aside p {
 
 /* line 15, ../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.5/scss/foundation/common/_typography.scss */
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-family: "Museo-500";
   font-weight: bold;
   font-style: normal;
   color: #222222;
@@ -6036,14 +6036,19 @@ table.hide-for-medium {
   background: url('../images/socialicons-s367c7a2103.png') no-repeat;
 }
 
-/* line 55, ../sass/app.scss */
+@font-face {
+  font-family: "MuseoSlab-500";
+  src: url('fonts/webfonts/25F607_0_0.eot') format('embedded-opentype'), url('fonts/webfonts/25F607_0_0.eot?#iefix') format('embedded-opentype'), url('fonts/webfonts/25F607_0_0.woff') format('woff'), url('fonts/webfonts/25F607_0_0.ttf') format('truetype'), url('fonts/webfonts/25F607_0_0.svg#wf') format('svg');
+}
+
+/* line 57, ../sass/app.scss */
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-/* line 59, ../sass/app.scss */
+/* line 61, ../sass/app.scss */
 .social-links {
   margin: 0;
   padding: 0;
@@ -6067,7 +6072,7 @@ table.hide-for-medium {
   padding-right: 5px;
 }
 
-/* line 64, ../sass/app.scss */
+/* line 66, ../sass/app.scss */
 .s-link a {
   text-indent: -119988px;
   overflow: hidden;
@@ -6075,7 +6080,7 @@ table.hide-for-medium {
   display: block;
 }
 
-/* line 70, ../sass/app.scss */
+/* line 72, ../sass/app.scss */
 a[href*="facebook"] {
   background-position: 0 -160px;
   margin: 6px 0;
@@ -6096,12 +6101,12 @@ a[href*="facebook"] {
 a[href*="facebook"]:hover, a[href*="facebook"].facebook-32_hover, a[href*="facebook"].facebook-32-hover {
   background-position: 0 -128px;
 }
-/* line 78, ../sass/app.scss */
+/* line 80, ../sass/app.scss */
 a[href*="facebook"]:hover {
   background-color: #f28e84;
 }
 
-/* line 83, ../sass/app.scss */
+/* line 85, ../sass/app.scss */
 a[href*="twitter"] {
   background-position: 0 -64px;
   margin: 6px 0;
@@ -6122,12 +6127,12 @@ a[href*="twitter"] {
 a[href*="twitter"]:hover, a[href*="twitter"].twitter-32_hover, a[href*="twitter"].twitter-32-hover {
   background-position: 0 -96px;
 }
-/* line 91, ../sass/app.scss */
+/* line 93, ../sass/app.scss */
 a[href*="twitter"]:hover {
   background-color: #f28e84;
 }
 
-/* line 96, ../sass/app.scss */
+/* line 98, ../sass/app.scss */
 a[href*="vimeo"] {
   background-position: 0 0;
   margin: 6px 0;
@@ -6148,16 +6153,16 @@ a[href*="vimeo"] {
 a[href*="vimeo"]:hover, a[href*="vimeo"].vimeo-32_hover, a[href*="vimeo"].vimeo-32-hover {
   background-position: 0 -32px;
 }
-/* line 104, ../sass/app.scss */
+/* line 106, ../sass/app.scss */
 a[href*="vimeo"]:hover {
   background-color: #f28e84;
 }
 
-/* line 109, ../sass/app.scss */
+/* line 111, ../sass/app.scss */
 input[type="search"] {
   font-style: italic;
 }
-/* line 111, ../sass/app.scss */
+/* line 113, ../sass/app.scss */
 input[type="search"].round {
   -webkit-border-radius: 1000px;
   -moz-border-radius: 1000px;
@@ -6166,31 +6171,39 @@ input[type="search"].round {
   border-radius: 1000px;
 }
 
-/* line 116, ../sass/app.scss */
-ul.inline-list > li {
-  margin-left: 0;
-  border-right: 1px solid #eeeeee;
-}
-/* line 119, ../sass/app.scss */
-ul.inline-list > li:last-child {
-  border-right: none;
+/* line 118, ../sass/app.scss */
+.login {
+  font-style: italic;
+  text-decoration: underline;
 }
 
-/* line 124, ../sass/app.scss */
+/* line 123, ../sass/app.scss */
 .nav-link {
+  color: #666;
+  font-family: "MuseoSlab-500";
   font-size: 23px;
-  padding: 0 25px;
+  padding: 0 3%;
+  line-height: 63px;
+  border-right: 1px solid #eeeeee;
   -webkit-transition: all 0.4s;
   -moz-transition: all 0.4s;
   -o-transition: all 0.4s;
   transition: all 0.4s;
 }
-/* line 128, ../sass/app.scss */
+/* line 131, ../sass/app.scss */
 .nav-link:hover {
   color: #fdd017;
 }
+/* line 134, ../sass/app.scss */
+.nav-link:first-child {
+  padding-left: 0;
+}
+/* line 137, ../sass/app.scss */
+.nav-link:last-child {
+  border-right: none;
+}
 
-/* line 133, ../sass/app.scss */
+/* line 142, ../sass/app.scss */
 .logo {
   width: 100%;
 }

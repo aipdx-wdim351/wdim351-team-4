@@ -52,6 +52,8 @@
 
 // Media Queries Overrides
 // @import "foundation/components/modules/mqueries";
+@include font-face("MuseoSlab-500", font-files("webfonts/25F607_0_0.eot", "webfonts/25F607_0_0.eot?#iefix", "webfonts/25F607_0_0.woff", "webfonts/25F607_0_0.ttf", "webfonts/25F607_0_0.svg#wf"));
+
 *{
   @include box-sizing("border-box");
 }
@@ -113,20 +115,27 @@ input[type="search"]{
   }
 }
 
-ul.inline-list > li{
-  margin-left: 0;
-  border-right: 1px solid #eee;
-  &:last-child{
-    border-right: none;
-  }
+.login{
+  font-style: italic;
+  text-decoration: underline;
 }
 
 .nav-link{
+  color: #666;
+  font-family: "MuseoSlab-500";
   font-size: ms(2);
-  padding: 0 25px;
+  padding: 0 3%;
+  line-height: 63px;
+  border-right: 1px solid #eee;
   @include transition(all 0.4s);
   &:hover{
     color: #fdd017;
+  }
+  &:first-child{
+    padding-left: 0;
+  }
+  &:last-child{
+    border-right: none;
   }
 }
 
