@@ -5156,107 +5156,6 @@ table.hide-for-medium {
   background: url('../images/socialicons-s367c7a2103.png') no-repeat;
 }
 
-/* Requires: normalize.css */
-/* Global Reset & Standards ---------------------- */
-*, *:before, *:after {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-html {
-  font-size: 62.5%;
-}
-
-body {
-  background: white;
-  font-family: "Open Sans", Arial, sans-serif;
-  font-weight: normal;
-  font-style: normal;
-  font-size: 14px;
-  line-height: 1;
-  color: #444444;
-  position: relative;
-  -webkit-font-smoothing: antialiased;
-}
-
-/* Links ---------------------- */
-a img {
-  border: none;
-}
-
-a {
-  color: #ed6456;
-  text-decoration: none;
-  line-height: inherit;
-}
-
-a:hover {
-  color: #eb4f3f;
-}
-
-a:focus {
-  color: #eb4f3f;
-}
-
-p a, p a:visited {
-  line-height: inherit;
-}
-
-/* Misc ---------------------- */
-.left {
-  float: left;
-}
-
-.right {
-  float: right;
-}
-
-.text-left {
-  text-align: left;
-}
-
-.text-right {
-  text-align: right;
-}
-
-.text-center {
-  text-align: center;
-}
-
-.hide {
-  display: none;
-}
-
-.hide-override {
-  display: none !important;
-}
-
-.highlight {
-  background: #ffff99;
-}
-
-#googlemap img, object, embed {
-  max-width: none;
-}
-
-#map_canvas embed {
-  max-width: none;
-}
-
-#map_canvas img {
-  max-width: none;
-}
-
-#map_canvas object {
-  max-width: none;
-}
-
-/* Reset for strange margins by default on <figure> elements */
-figure {
-  margin: 0;
-}
-
 @font-face {
   font-family: "MuseoSlab-500";
   src: url('../webfonts/25F607_0_0.eot') format('embedded-opentype'), url('../webfonts/25F607_0_0.eot?#iefix') format('embedded-opentype'), url('../webfonts/25F607_0_0.woff') format('woff'), url('../webfonts/25F607_0_0.ttf') format('truetype'), url('../webfonts/25F607_0_0.svg#wf') format('svg');
@@ -5390,7 +5289,7 @@ input[type="search"].round {
   color: #666;
   font-family: "MuseoSlab-500";
   font-size: 17px;
-  padding: 0 3.5%;
+  padding: 0 2.5%;
   line-height: 63px;
   width: 10%;
   border-right: 1px solid #eeeeee;
@@ -5406,6 +5305,7 @@ input[type="search"].round {
   padding-left: 0;
 }
 .nav-link:last-child {
+  padding-right: 0;
   border-right: none;
 }
 
@@ -5713,4 +5613,8 @@ input[type="search"].round {
 .row.services + .row.services {
   margin-top: 0;
   margin-bottom: 40px;
+}
+
+.faq-column .testimonial {
+  margin-top: 0px;
 }
