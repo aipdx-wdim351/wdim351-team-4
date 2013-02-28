@@ -5356,6 +5356,23 @@ input[type="search"].round {
   font-weight: 500;
   margin: 5px 0;
 }
+.row.free-pass.blog {
+  border-top: none;
+  text-align: left;
+  padding: 7px;
+}
+.row.free-pass.blog .pass {
+  font-family: "MuseoSlab-500";
+  line-height: 1;
+  font-size: 23px;
+  font-weight: 500;
+  display: inline;
+  float: left;
+}
+.row.free-pass.blog .view-more {
+  float: right;
+  display: inline;
+}
 
 .row.newsletter {
   text-align: center;
@@ -5380,6 +5397,23 @@ input[type="search"].round {
   padding: 15px;
   margin-bottom: 10px;
   background-color: #eee;
+}
+.row.newsletter.blog {
+  border-top: none;
+  text-align: left;
+  padding: 6px;
+}
+.row.newsletter.blog .news {
+  font-family: "MuseoSlab-500";
+  line-height: 1;
+  font-size: 23px;
+  font-weight: 500;
+  display: inline;
+  float: left;
+}
+.row.newsletter.blog .view-more {
+  float: right;
+  display: inline;
 }
 
 .circle {
@@ -5474,6 +5508,21 @@ input[type="search"].round {
   border-bottom: 1px solid #f28e84;
 }
 
+.row.blog-post {
+  margin-top: 40px;
+}
+.row.blog-post h4 {
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #cccccc;
+}
+.row.blog-post .logo {
+  margin-top: 48px;
+}
+.row.blog-post + .row.blog-post {
+  margin-bottom: 40px;
+}
+
 .row.footer {
   background-color: #333;
   height: 300px;
@@ -5483,4 +5532,28 @@ input[type="search"].round {
   color: #fafafa;
   text-align: center;
   padding-top: 140px;
+}
+
+.about-intro {
+  color: #111;
+  font-family: "MuseoSlab-500";
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.row.services {
+  margin-top: 40px;
+  text-align: center;
+}
+.row.services .four {
+  margin-bottom: 20px;
+}
+.row.services h4 {
+  margin: 0;
+  padding: 75px 0;
+  background-color: #ccc;
+}
+.row.services + .row.services {
+  margin-top: 0;
+  margin-bottom: 40px;
 }
