@@ -393,6 +393,13 @@ input[type="search"]{
 	width: 100%;
 	background-color: #666;
 	overflow: hidden;
+	position: relative;
+	& .white-bar {
+		width: 100%;
+		border-top: 45px solid #fff;
+		position: absolute;
+		top: 0px;
+	}
 }
 .map-section {
 	border: 45px solid #ed6456;
@@ -403,7 +410,10 @@ input[type="search"]{
 	}
 }
 
-.contact-info{
+.contact-info {
+	& .contact-item {
+		font-size: ms(1);
+	}
 	& .row {
 		padding-bottom: 15px;
 	}
@@ -431,6 +441,10 @@ input[type="search"]{
   line-height: 1.8;
 }
 
+.spaced {
+	margin: 50px auto;
+}
+
 .row.services {
   margin-top: 40px;
   text-align: center;
@@ -446,4 +460,10 @@ input[type="search"]{
     margin-top: 0;
     margin-bottom: 40px;
   }
+}
+
+.faq-column {
+	& .testimonial {
+		margin-top: 0px;
+	}
 }
