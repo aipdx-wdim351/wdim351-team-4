@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);
 /* Requires: normalize.css */
 /* Global Reset & Standards ---------------------- */
@@ -1994,10 +1995,10 @@ ul.flyout li.active a, .nav-bar li ul li.active a {
   line-height: 45px;
   padding: 0 15px;
 }
-.top-bar ul > li:not(.name, .s-links):hover, .top-bar ul > li:not(.name, .s-links).active, .top-bar ul > li:not(.name, .s-links):focus {
+.top-bar ul > li:not(.name):hover, .top-bar ul > li:not(.name).active, .top-bar ul > li:not(.name):focus {
   background: #df2a18;
 }
-.top-bar ul > li:not(.name, .s-links):hover a, .top-bar ul > li:not(.name, .s-links).active a, .top-bar ul > li:not(.name, .s-links):focus a {
+.top-bar ul > li:not(.name):hover a, .top-bar ul > li:not(.name).active a, .top-bar ul > li:not(.name):focus a {
   color: #d9d9d9;
 }
 .top-bar ul > li.divider {
@@ -2354,7 +2355,7 @@ ul.flyout li.active a, .nav-bar li ul li.active a {
   position: absolute;
   top: 0;
   left: -20px;
-  background: url('../images/foundation/orbit/rotator-black.png?1361553997') no-repeat;
+  background: url('../images/foundation/orbit/rotator-black.png?1361928283') no-repeat;
   z-index: 3;
 }
 .orbit-wrapper span.rotator.move {
@@ -2373,7 +2374,7 @@ ul.flyout li.active a, .nav-bar li ul li.active a {
 .orbit-wrapper span.mask.move {
   width: 40px;
   left: 0;
-  background: url('../images/foundation/orbit/timer-black.png?1361553997') repeat 0 0;
+  background: url('../images/foundation/orbit/timer-black.png?1361928283') repeat 0 0;
 }
 .orbit-wrapper span.pause {
   display: block;
@@ -2382,12 +2383,12 @@ ul.flyout li.active a, .nav-bar li ul li.active a {
   position: absolute;
   top: 0;
   left: 0;
-  background: url('../images/foundation/orbit/pause-black.png?1361553997') no-repeat;
+  background: url('../images/foundation/orbit/pause-black.png?1361928283') no-repeat;
   z-index: 4;
   opacity: 0;
 }
 .orbit-wrapper span.pause.active {
-  background: url('../images/foundation/orbit/pause-black.png?1361553997') no-repeat 0 -40px;
+  background: url('../images/foundation/orbit/pause-black.png?1361928283') no-repeat 0 -40px;
 }
 .orbit-wrapper .timer:hover span.pause, .orbit-wrapper .timer:focus span.pause, .orbit-wrapper span.pause.active {
   opacity: 1;
@@ -2428,21 +2429,21 @@ ul.flyout li.active a, .nav-bar li ul li.active a {
   cursor: pointer;
 }
 .orbit-wrapper .slider-nav span.right {
-  background: url('../images/foundation/orbit/right-arrow.png?1361553997');
+  background: url('../images/foundation/orbit/right-arrow.png?1361928283');
   background-size: 100%;
   right: 0;
 }
 .orbit-wrapper .slider-nav span.left {
-  background: url('../images/foundation/orbit/left-arrow.png?1361553997');
+  background: url('../images/foundation/orbit/left-arrow.png?1361928283');
   background-size: 100%;
   left: 0;
 }
 
 .lt-ie9 .orbit-wrapper .slider-nav span.right {
-  background: url('../images/foundation/orbit/right-arrow-small.png?1361553997');
+  background: url('../images/foundation/orbit/right-arrow-small.png?1361928283');
 }
 .lt-ie9 .orbit-wrapper .slider-nav span.left {
-  background: url('../images/foundation/orbit/left-arrow-small.png?1361553997');
+  background: url('../images/foundation/orbit/left-arrow-small.png?1361928283');
 }
 
 /* Bullet Nav ---------------------- */
@@ -2461,7 +2462,7 @@ ul.orbit-bullets li {
   cursor: pointer;
   color: #999999;
   text-indent: -9999px;
-  background: url('../images/foundation/orbit/bullets.jpg?1361553997') no-repeat 4px 0;
+  background: url('../images/foundation/orbit/bullets.jpg?1361928283') no-repeat 4px 0;
   width: 13px;
   height: 12px;
   overflow: hidden;
@@ -5156,6 +5157,107 @@ table.hide-for-medium {
   background: url('../images/socialicons-s367c7a2103.png') no-repeat;
 }
 
+/* Requires: normalize.css */
+/* Global Reset & Standards ---------------------- */
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: white;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1;
+  color: #444444;
+  position: relative;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Links ---------------------- */
+a img {
+  border: none;
+}
+
+a {
+  color: #ed6456;
+  text-decoration: none;
+  line-height: inherit;
+}
+
+a:hover {
+  color: #eb4f3f;
+}
+
+a:focus {
+  color: #eb4f3f;
+}
+
+p a, p a:visited {
+  line-height: inherit;
+}
+
+/* Misc ---------------------- */
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.hide {
+  display: none;
+}
+
+.hide-override {
+  display: none !important;
+}
+
+.highlight {
+  background: #ffff99;
+}
+
+#googlemap img, object, embed {
+  max-width: none;
+}
+
+#map_canvas embed {
+  max-width: none;
+}
+
+#map_canvas img {
+  max-width: none;
+}
+
+#map_canvas object {
+  max-width: none;
+}
+
+/* Reset for strange margins by default on <figure> elements */
+figure {
+  margin: 0;
+}
+
 @font-face {
   font-family: "MuseoSlab-500";
   src: url('../webfonts/25F607_0_0.eot') format('embedded-opentype'), url('../webfonts/25F607_0_0.eot?#iefix') format('embedded-opentype'), url('../webfonts/25F607_0_0.woff') format('woff'), url('../webfonts/25F607_0_0.ttf') format('truetype'), url('../webfonts/25F607_0_0.svg#wf') format('svg');
@@ -5291,6 +5393,7 @@ input[type="search"].round {
   font-size: 17px;
   padding: 0 3.5%;
   line-height: 63px;
+  width: 10%;
   border-right: 1px solid #eeeeee;
   -webkit-transition: all 0.4s;
   -moz-transition: all 0.4s;
@@ -5472,6 +5575,61 @@ input[type="search"].round {
   padding: 20px 0 10px;
   border-top: 1px solid #fafafa;
   border-bottom: 1px solid #f28e84;
+}
+
+.title-section {
+  margin: 20px auto;
+}
+
+.page-title {
+  background-color: #ccc;
+  text-align: center;
+}
+.page-title .title {
+  color: #fff;
+  min-height: 76px;
+  line-height: 76px;
+}
+
+.callout_small {
+  clear: both;
+  border-bottom: 1px solid #666666;
+  border-top: 1px solid #666666;
+  padding: 0px;
+  overflow: hidden;
+}
+.callout_small .all_caps {
+  text-transform: uppercase;
+  float: left;
+  width: 50%;
+  margin: 12px 0;
+}
+.callout_small .view-more {
+  float: right;
+  margin-top: 8px;
+}
+
+.full-width-color {
+  width: 100%;
+  background-color: #666;
+  overflow: hidden;
+}
+
+.map-section {
+  border: 45px solid #ed6456;
+  background-color: #fff;
+  min-height: 350px;
+}
+.map-section .map-title {
+  text-align: center;
+}
+
+.contact-info .row {
+  padding-bottom: 15px;
+}
+.contact-info .icon {
+  float: left;
+  margin-right: 20px;
 }
 
 .row.footer {
