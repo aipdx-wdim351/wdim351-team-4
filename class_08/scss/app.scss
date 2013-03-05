@@ -1,0 +1,198 @@
+// Global Foundation Settings
+@import "settings";
+@import "compass";
+@import "socialicons/*.png";
+
+// Comment out this import if you are customizing you imports below
+@import "foundation";
+
+// Import specific parts of Foundation by commenting the import "foundation"
+// and uncommenting what you want below. You must uncomment the following if customizing
+
+// @import "foundation/foundation-global";
+// @import "foundation/components/grid";
+// @import "foundation/components/visibility";
+// @import "foundation/components/block-grid";
+// @import "foundation/components/type";
+// @import "foundation/components/buttons";
+// @import "foundation/components/forms";
+// @import "foundation/components/custom-forms";
+// @import "foundation/components/button-groups";
+// @import "foundation/components/dropdown-buttons";
+// @import "foundation/components/split-buttons";
+// @import "foundation/components/flex-video";
+// @import "foundation/components/section";
+// @import "foundation/components/top-bar";
+// @import "foundation/components/orbit";
+// @import "foundation/components/reveal";
+// @import "foundation/components/joyride";
+// @import "foundation/components/clearing";
+// @import "foundation/components/alert-boxes";
+// @import "foundation/components/breadcrumbs";
+// @import "foundation/components/keystrokes";
+// @import "foundation/components/labels";
+// @import "foundation/components/inline-lists";
+// @import "foundation/components/pagination";
+// @import "foundation/components/panels";
+// @import "foundation/components/pricing-tables";
+// @import "foundation/components/progress-bars";
+// @import "foundation/components/side-nav";
+// @import "foundation/components/sub-nav";
+// @import "foundation/components/switch";
+// @import "foundation/components/magellan";
+// @import "foundation/components/tables";
+// @import "foundation/components/thumbs";
+// @import "foundation/components/tooltips";
+// @import "foundation/components/dropdown";
+
+@include font-face("MuseoSlab-500", font-files("25F607_0_0.eot", "25F607_0_0.eot?#iefix", "25F607_0_0.woff", "25F607_0_0.ttf", "25F607_0_0.svg#wf"));
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);
+
+*{
+  @include box-sizing("border-box");
+}
+
+.social-links{
+  @include inline-block-list(5px);
+}
+
+.s-link{
+  a{
+    @include hide-text();
+    display: block;
+  }
+}
+
+a[href*="facebook"]{
+  @include socialicons-sprite("facebook-32");
+  margin: 6px 0;
+  height: 32px !important;
+  width: 32px;
+  background-color: #fafafa;
+  @include border-radius(1000px);
+  @include transition(all 0.2s ease-out);
+  &:hover{
+    background-color: lighten($topbar-bg, 10%);
+  }
+}
+
+a[href*="twitter"]{
+  @include socialicons-sprite("twitter-32");
+  margin: 6px 0;
+  height: 32px !important;
+  width: 32px;
+  background-color: #fafafa;
+  @include border-radius(1000px);
+  @include transition(all 0.2s ease-out);
+  &:hover{
+    background-color: lighten($topbar-bg, 10%);;
+  }
+}
+
+a[href*="vimeo"]{
+  @include socialicons-sprite("vimeo-32");
+  margin: 6px 0;
+  height: 32px !important;
+  width: 32px;
+  background-color: #fafafa;
+  @include border-radius(1000px);
+  @include transition(all 0.2s ease-out);
+  &:hover{
+    background-color: lighten($topbar-bg, 10%);;
+  }
+}
+
+input[type="text"]{
+  &.rounded { 
+    @include border-radius(1000px); 
+  }
+}
+
+.row.nav-wrapper {
+  margin-top: emCalc(20px);
+  margin-bottom: emCalc(20px);  
+}
+
+.logo {
+  margin: 0;
+}
+
+.login {
+  font-style: italic;
+  text-decoration: underline;
+}
+
+.inline-list.main-nav {
+  margin: 0;
+  margin-top: emCalc(15px);
+  & li {
+    margin: 0;
+    padding-right: emCalc(16px);
+    padding-left: emCalc(16px);
+    border-right: 1px solid #eee;
+  }
+  & li:first-child {
+    padding-left: emCalc(0px);
+  }
+  & li:last-child {
+    padding-right: emCalc(0px);
+    border-right: none;
+  }
+  & a {
+    color: #666;
+    font-size: emCalc(23px);
+    font-family: $header-font-family;
+    font-weight: $header-font-weight;
+    letter-spacing: emCalc(-1px);
+  }
+}
+
+.slider-left {
+  border-left: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+
+.slider-right {
+  border-right: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+
+.pager {
+  padding: emCalc(20px) emCalc(3px);
+  vertical-align: bottom;
+  &:first-child {
+    padding-left: 0;
+  }
+  &:last-child {
+    padding-right: 0;
+  }
+}
+
+.ctrl {
+  padding: emCalc(15px);
+  &:first-child {
+    padding-left: 0;
+  }
+  &:last-child {
+    padding-right: 0;
+  }
+}
+
+span.ctrl {
+  padding-top: emCalc(18px);
+}
+
+@media only screen and (max-width: 939px) {
+  .hide-nav {
+    display: none;
+  }
+  .show-nav {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 940px) {
+  .show-nav {
+    display: none;
+  }
+}
