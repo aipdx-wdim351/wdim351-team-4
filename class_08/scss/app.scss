@@ -183,6 +183,8 @@ span.ctrl {
 }
 
 .news-wrapper {
+  padding-top: emCalc(10px);
+  border-top: emCalc(2px) solid #eee;
   border-bottom: emCalc(1px) solid #eee;
 }
 
@@ -220,6 +222,64 @@ span.ctrl {
   display: block;
   font-size: emCalc(13px);
   font-style: italic;
+}
+
+.subtle {
+  margin: emCalc(60px) emCalc(-10px) 0;
+  padding-top: emCalc(60px);
+  background: url('../img/subtle_grunge.png') top left repeat;
+  -webkit-box-shadow: inset 0px 1px 10px rgba(0,0,0, 0.25);
+     -moz-box-shadow: inset 0px 1px 10px rgba(0,0,0, 0.25);
+          box-shadow: inset 0px 1px 10px rgba(0,0,0, 0.25);
+}
+
+.footer {
+  min-height: emCalc(200px);
+  background-color: #555;
+}
+
+.testimonial {
+  min-height: emCalc(280px);
+  background: url('../img/testimonial_bg.png') bottom center no-repeat;
+}
+
+.read-more {
+  color: $primary-color;
+  font-size: emCalc(15px);
+  font-style: italic;
+}
+
+.bot {
+  margin-bottom: emCalc(10px);
+}
+
+.content-head {
+  padding-bottom: emCalc(5px);
+  border-bottom: 2px solid #ccc;
+}
+
+.muted {
+  color: #999;
+  font-style: italic;
+}
+
+.follow {
+  padding-top: emCalc(5px);
+  padding-bottom: emCalc(5px);
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+.stats-bg {
+  min-height: emCalc(300px);
+  background-color: $primary-color;
+  -webkit-box-shadow: inset 0 -10px 15px -10px rgba(0,0,0, 0.8);
+     -moz-box-shadow: inset 0 -10px 15px -10px rgba(0,0,0, 0.8);
+          box-shadow: inset 0 -10px 15px -10px rgba(0,0,0, 0.8);
+}
+
+.row.main-content {
+  margin-bottom: emCalc(40px);
 }
 
 @media only screen and (max-width: 939px) {

@@ -73,7 +73,7 @@ $primary-color: #ed6456;
 $header-font-family: "MuseoSlab-500", Arial, sans-serif;
 $header-font-weight: 500;
 // $header-font-style: normal;
-$header-font-color: #666;
+$header-font-color: #444;
 // $header-line-height: 1.4;
 // $header-top-margin .2em;
 // $header-bottom-margin .5em;
@@ -101,7 +101,7 @@ $header-font-color: #666;
 // We use these to style paragraphs
 // $paragraph-font-family: inherit;
 // $paragraph-font-weight: normal;
-// $paragraph-font-size: 1em;
+$paragraph-font-size: emCalc(14px);
 // $paragraph-line-height: 1.6;
 // $paragraph-margin-bottom: emCalc(20px);
 // $paragraph-aside-font-size: emCalc(14px);
