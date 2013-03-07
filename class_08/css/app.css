@@ -4494,6 +4494,11 @@ input[type="text"].rounded {
   -o-border-radius: 1000px;
   border-radius: 1000px;
 }
+input[type="text"].input {
+  -webkit-box-shadow: inset 0px 10px 15px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: inset 0px 10px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0px 10px 15px rgba(0, 0, 0, 0.1);
+}
 
 .row.nav-wrapper {
   margin-top: 1.25em;
@@ -4509,6 +4514,26 @@ input[type="text"].rounded {
   text-decoration: underline;
 }
 
+.inline-list.foot-nav {
+  margin: 0;
+}
+.inline-list.foot-nav li {
+  margin: 0;
+  padding-right: 0.4375em;
+  padding-left: 0.4375em;
+}
+.inline-list.foot-nav li:first-child {
+  padding-left: 0em;
+}
+.inline-list.foot-nav li:last-child {
+  padding-right: 0em;
+}
+.inline-list.foot-nav a {
+  color: #ddd;
+  font-size: 1.125em;
+  font-family: "MuseoSlab-500", Arial, sans-serif;
+  font-weight: 500;
+}
 .inline-list.main-nav {
   margin: 0;
   margin-top: 0.9375em;
@@ -4594,6 +4619,13 @@ span.ctrl {
   margin-top: 7.5em;
 }
 
+.button.view-more {
+  font-size: 0.875em;
+  font-weight: 100;
+  font-style: italic;
+  padding: 0.4375em 3.75em;
+}
+
 .news {
   text-align: center;
   display: block;
@@ -4621,13 +4653,34 @@ span.ctrl {
 }
 
 .footer {
-  min-height: 12.5em;
   background-color: #555;
+  padding-top: 3.75em;
+  padding-bottom: 3.75em;
+}
+.footer .large-9 {
+  padding-left: 0;
+  padding-right: 0;
+}
+.footer p {
+  color: #ddd;
+  margin: 0;
+  font-size: 0.875em;
+  font-family: "MuseoSlab-500", Arial, sans-serif;
+  font-weight: 500;
+}
+.footer p.gray {
+  color: #aaa;
 }
 
 .testimonial {
   min-height: 17.5em;
-  background: url("../img/testimonial_bg.png") bottom center no-repeat;
+  text-align: center;
+  padding-top: 4.375em;
+  background: url("../img/testimonial_bg2.png") bottom center no-repeat;
+}
+.testimonial h3 {
+  color: #fff;
+  text-transform: uppercase;
 }
 
 .read-more {
@@ -4642,7 +4695,7 @@ span.ctrl {
 
 .content-head {
   padding-bottom: 0.3125em;
-  border-bottom: 2px solid #cccccc;
+  border-bottom: 1px solid #cccccc;
 }
 
 .muted {
@@ -4658,7 +4711,9 @@ span.ctrl {
 }
 
 .stats-bg {
-  min-height: 18.75em;
+  text-align: center;
+  padding-top: 3.75em;
+  padding-bottom: 2.5em;
   background-color: #ed6456;
   -webkit-box-shadow: inset 0 -10px 15px -10px rgba(0, 0, 0, 0.8);
   -moz-box-shadow: inset 0 -10px 15px -10px rgba(0, 0, 0, 0.8);
@@ -4667,6 +4722,41 @@ span.ctrl {
 
 .row.main-content {
   margin-bottom: 2.5em;
+}
+
+.stats {
+  color: #fff;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+}
+
+.personal {
+  color: #ddd;
+  font-style: italic;
+}
+
+.stat-btns {
+  padding-top: 20px;
+}
+.stat-btns .white {
+  color: #ed6456;
+  background-color: #fff;
+  -webkit-box-shadow: inset 0 -10px 20px -10px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: inset 0 -10px 20px -10px rgba(0, 0, 0, 0.4);
+  box-shadow: inset 0 -10px 20px -10px rgba(0, 0, 0, 0.4);
+}
+.stat-btns .white:hover {
+  background-color: #f2f2f2;
+}
+.stat-btns .blue {
+  color: #fff;
+  background-color: #18548d;
+  -webkit-box-shadow: inset 0 -10px 20px -10px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: inset 0 -10px 20px -10px rgba(0, 0, 0, 0.4);
+  box-shadow: inset 0 -10px 20px -10px rgba(0, 0, 0, 0.4);
+}
+.stat-btns .blue:hover {
+  background-color: #144777;
 }
 
 @media only screen and (max-width: 939px) {

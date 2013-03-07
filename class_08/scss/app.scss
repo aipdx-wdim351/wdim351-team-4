@@ -106,6 +106,11 @@ input[type="text"]{
   &.rounded { 
     @include border-radius(1000px); 
   }
+  &.input {
+    -webkit-box-shadow: inset 0px 10px 15px rgba(0,0,0, 0.1);
+       -moz-box-shadow: inset 0px 10px 15px rgba(0,0,0, 0.1);
+            box-shadow: inset 0px 10px 15px rgba(0,0,0, 0.1);
+  }
 }
 
 .row.nav-wrapper {
@@ -122,28 +127,50 @@ input[type="text"]{
   text-decoration: underline;
 }
 
-.inline-list.main-nav {
-  margin: 0;
-  margin-top: emCalc(15px);
-  & li {
+.inline-list {
+  &.foot-nav {
     margin: 0;
-    padding-right: emCalc(16px);
-    padding-left: emCalc(16px);
-    border-right: 1px solid #eee;
+    & li {
+      margin: 0;
+      padding-right: emCalc(7px);
+      padding-left: emCalc(7px);
+    }
+    & li:first-child {
+      padding-left: emCalc(0px);
+    }
+    & li:last-child {
+      padding-right: emCalc(0px);
+    }
+    & a {
+      color: #ddd;
+      font-size: emCalc(18px);
+      font-family: $header-font-family;
+      font-weight: $header-font-weight;
+    }
   }
-  & li:first-child {
-    padding-left: emCalc(0px);
-  }
-  & li:last-child {
-    padding-right: emCalc(0px);
-    border-right: none;
-  }
-  & a {
-    color: #666;
-    font-size: emCalc(23px);
-    font-family: $header-font-family;
-    font-weight: $header-font-weight;
-    letter-spacing: emCalc(-1px);
+  &.main-nav {
+    margin: 0;
+    margin-top: emCalc(15px);
+    & li {
+      margin: 0;
+      padding-right: emCalc(16px);
+      padding-left: emCalc(16px);
+      border-right: 1px solid #eee;
+    }
+    & li:first-child {
+      padding-left: emCalc(0px);
+    }
+    & li:last-child {
+      padding-right: emCalc(0px);
+      border-right: none;
+    }
+    & a {
+      color: #666;
+      font-size: emCalc(23px);
+      font-family: $header-font-family;
+      font-weight: $header-font-weight;
+      letter-spacing: emCalc(-1px);
+    }
   }
 }
 
@@ -207,6 +234,13 @@ span.ctrl {
   }
 }
 
+.button.view-more {
+  font-size: emCalc(14px);
+  font-weight: 100;
+  font-style: italic;
+  padding: emCalc(7px) emCalc(60px);
+}
+
 .news {
   text-align: center;
   display: block;
@@ -234,13 +268,34 @@ span.ctrl {
 }
 
 .footer {
-  min-height: emCalc(200px);
   background-color: #555;
+  padding-top: emCalc(60px);
+  padding-bottom: emCalc(60px);
+  & .large-9 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  & p {
+    color: #ddd;
+    margin: 0;
+    font-size: emCalc(14px);
+    font-family: $header-font-family;
+    font-weight: $header-font-weight;
+    &.gray {
+      color: #aaa;
+    }
+  }
 }
 
 .testimonial {
   min-height: emCalc(280px);
-  background: url('../img/testimonial_bg.png') bottom center no-repeat;
+  text-align: center;
+  padding-top: emCalc(70px);
+  background: url('../img/testimonial_bg2.png') bottom center no-repeat;
+  & h3 {
+    color: #fff;
+    text-transform: uppercase;
+  }
 }
 
 .read-more {
@@ -255,7 +310,7 @@ span.ctrl {
 
 .content-head {
   padding-bottom: emCalc(5px);
-  border-bottom: 2px solid #ccc;
+  border-bottom: 1px solid #ccc;
 }
 
 .muted {
@@ -271,7 +326,9 @@ span.ctrl {
 }
 
 .stats-bg {
-  min-height: emCalc(300px);
+  text-align: center;
+  padding-top: emCalc(60px);
+  padding-bottom: emCalc(40px);
   background-color: $primary-color;
   -webkit-box-shadow: inset 0 -10px 15px -10px rgba(0,0,0, 0.8);
      -moz-box-shadow: inset 0 -10px 15px -10px rgba(0,0,0, 0.8);
@@ -280,6 +337,41 @@ span.ctrl {
 
 .row.main-content {
   margin-bottom: emCalc(40px);
+}
+
+.stats {
+  color: #fff;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+}
+
+.personal {
+  color: #ddd;
+  font-style: italic;
+}
+
+.stat-btns {
+  padding-top: 20px;
+  & .white {
+    color: $primary-color;
+    background-color: #fff;
+    -webkit-box-shadow: inset 0 -10px 20px -10px rgba(0,0,0, 0.4);
+       -moz-box-shadow: inset 0 -10px 20px -10px rgba(0,0,0, 0.4);
+            box-shadow: inset 0 -10px 20px -10px rgba(0,0,0, 0.4);
+    &:hover {
+      background-color: darken(#fff, 5%);
+    }
+  }
+  & .blue {
+    color: #fff;
+    background-color: #18548d;
+    -webkit-box-shadow: inset 0 -10px 20px -10px rgba(0,0,0, 0.4);
+       -moz-box-shadow: inset 0 -10px 20px -10px rgba(0,0,0, 0.4);
+            box-shadow: inset 0 -10px 20px -10px rgba(0,0,0, 0.4);
+    &:hover {
+      background-color: darken(#18548d, 5%);
+    }
+  }
 }
 
 @media only screen and (max-width: 939px) {
