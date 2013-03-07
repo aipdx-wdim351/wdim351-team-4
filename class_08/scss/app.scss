@@ -107,9 +107,9 @@ input[type="text"]{
     @include border-radius(1000px); 
   }
   &.input {
-    -webkit-box-shadow: inset 0px 10px 15px rgba(0,0,0, 0.1);
-       -moz-box-shadow: inset 0px 10px 15px rgba(0,0,0, 0.1);
-            box-shadow: inset 0px 10px 15px rgba(0,0,0, 0.1);
+    -webkit-box-shadow: inset 0px 7px 15px rgba(0,0,0, 0.05);
+       -moz-box-shadow: inset 0px 7px 15px rgba(0,0,0, 0.05);
+            box-shadow: inset 0px 7px 15px rgba(0,0,0, 0.05);
   }
 }
 
@@ -153,8 +153,8 @@ input[type="text"]{
     margin-top: emCalc(15px);
     & li {
       margin: 0;
-      padding-right: emCalc(16px);
-      padding-left: emCalc(16px);
+      padding-right: emCalc(25px);
+      padding-left: emCalc(25px);
       border-right: 1px solid #eee;
     }
     & li:first-child {
@@ -174,14 +174,10 @@ input[type="text"]{
   }
 }
 
-.slider-left {
-  border-left: 1px solid #eee;
-  border-bottom: 1px solid #eee;
-}
-
-.slider-right {
-  border-right: 1px solid #eee;
-  border-bottom: 1px solid #eee;
+.slider {
+  -webkit-box-shadow: 0px 1px 10px rgba(0,0,0, 0.25);
+     -moz-box-shadow: 0px 1px 10px rgba(0,0,0, 0.25);
+          box-shadow: 0px 1px 10px rgba(0,0,0, 0.25);
 }
 
 .pager {
