@@ -13,39 +13,42 @@
   </head>
 
   <body>
+    <div class="wrapper">
+      <div class="row">
+        <nav class="top-bar">
+          <ul class="title-area social-links">
+            <!-- Title Area -->
+            <li class="s-link"><a href="http://www.facebook.com">Facebook</a></li>
+            <li class="s-link"><a href="http://www.twitter.com">Twitter</a></li>
+            <li class="s-link"><a href="http://www.vimeo.com">Vimeo</a></li>
+            <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+            <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+          </ul>    
 
-    <nav class="top-bar">
-      <ul class="title-area social-links">
-        <!-- Title Area -->
-        <li class="s-link"><a href="http://www.facebook.com">Facebook</a></li>
-        <li class="s-link"><a href="http://www.twitter.com">Twitter</a></li>
-        <li class="s-link"><a href="http://www.vimeo.com">Vimeo</a></li>
-        <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
-        <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
-      </ul>    
-
-      <section class="top-bar-section">
-        <!-- Right Nav Section -->
-        <ul class="right">
-          <li><a href="#" data-reveal-id="myModal" class="login">Log in</a></li>
-          <li class="has-form">
-            <form>
-              <div class="row collapse">
-                <div class="small-12 columns">
-                  <input type="text" class="rounded" placeholder="Search...">
-                </div>
-              </div>
-            </form>
-          </li>
-          <li class="show-nav"><a href="index.html">Home</a></li>
-          <li class="show-nav"><a href="#" data-reveal-id="myModal">Blog</a></li>
-          <li class="show-nav"><a href="#" data-reveal-id="myModal">Services</a></li>
-          <li class="show-nav"><a href="#" data-reveal-id="myModal">FAQ</a></li>
-          <li class="show-nav"><a href="#" data-reveal-id="myModal">ActivTrax</a></li>
-          <li class="show-nav"><a href="#" data-reveal-id="myModal">Contact</a></li>
-        </ul>
-      </section>
-    </nav>
+          <section class="top-bar-section">
+            <!-- Right Nav Section -->
+            <ul class="right">
+              <li><a href="#" data-reveal-id="myModal" class="login">Log in</a></li>
+              <li class="has-form">
+                <form>
+                  <div class="row collapse">
+                    <div class="small-12 columns">
+                      <input type="text" class="rounded" placeholder="Search...">
+                    </div>
+                  </div>
+                </form>
+              </li>
+              <li class="show-nav"><a href="index.html">Home</a></li>
+              <li class="show-nav"><a href="#" data-reveal-id="myModal">Blog</a></li>
+              <li class="show-nav"><a href="#" data-reveal-id="myModal">Services</a></li>
+              <li class="show-nav"><a href="#" data-reveal-id="myModal">FAQ</a></li>
+              <li class="show-nav"><a href="#" data-reveal-id="myModal">ActivTrax</a></li>
+              <li class="show-nav"><a href="#" data-reveal-id="myModal">Contact</a></li>
+            </ul>
+          </section>
+        </nav>
+      </div>
+    </div>
 
     <div class="row nav-wrapper">
       <div class="large-8 columns hide-nav">
@@ -67,9 +70,9 @@
     <div class="row">
       <div class="large-8 columns">
         <div class="cycle-slideshow">
-          <img src="http://placehold.it/1000x490">
-          <img src="http://placehold.it/1001x490">
-          <img src="http://placehold.it/1002x490">
+          <img src="http://lorempixel.com/1000/490">
+          <img src="http://lorempixel.com/1001/490">
+          <img src="http://lorempixel.com/1002/490">
         </div>
 
         <div class="row">
@@ -104,7 +107,7 @@
 
         <div class="row">
           <div class="large-12 columns pass">
-            <div class="small-4 large-11 columns large-centered small-centered">
+            <div class="small-10 large-11 columns large-centered small-centered">
               <a class="round button view-more expand free" href="#" data-reveal-id="myModal">View More</a>
             </div>
           </div>
@@ -157,7 +160,7 @@
 
     <div class="footer">
       <div class="row">
-        <div class="large-6 columns">
+        <div class="small-12 large-6 columns">
           <ul class="inline-list foot-nav">
             <li><a href="index.html">Home</a></li>
             <li><a href="#" data-reveal-id="myModal">Blog</a></li>
@@ -168,27 +171,41 @@
           </ul>
         </div>
 
-        <div class="large-3 columns">
-          <div class="large-3 columns">
+        <div class="small-12 large-3 columns">
+          <div class="small-4 large-3 columns">
             <p class="right gray">Hours:</p>
           </div>
 
-          <div class="large-9 columns">
-            <p class="left">Mon-Fri: 9am-8pm</p>
-            <p class="left">Sat: 9am-7pm</p>
-            <p class="left">Sun: 11am-7pm</p>
+          <div class="small-8 large-9 columns">
+            <div class="row">
+              <p class="left">Mon-Fri: 9am-8pm</p>
+            </div>
+            <div class="row">
+              <p class="left">Sat: 9am-7pm</p>
+            </div>
+            <div class="row">
+              <p class="left">Sun: 11am-7pm</p>
+            </div>
           </div>
         </div>
 
-        <div class="large-3 columns">
-          <div class="large-3 columns">
-            <p class="right gray">Phone:</p>
-            <p class="right gray">Email:</p>
+        <div class="small-12 large-3 columns">
+          <div class="small-3 large-3 columns">
+            <div class="row">
+              <p class="right gray">Phone:</p>
+            </div>
+            <div class="row">
+              <p class="right gray">Email:</p>
+            </div>
           </div>
 
-          <div class="large-9 columns">
-            <p class="left">503.555.5555</p>
-            <p class="left">contact@hwfitness.com</p>
+          <div class="small-8 large-9 columns">
+            <div class="row">  
+              <p class="left">503.555.5555</p>
+            </div>
+            <div class="row">
+              <p class="left">contact@hwfitness.com</p>
+            </div>
           </div>
         </div>
 

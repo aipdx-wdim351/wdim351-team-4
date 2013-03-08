@@ -267,10 +267,6 @@ span.ctrl {
   background-color: #555;
   padding-top: emCalc(60px);
   padding-bottom: emCalc(60px);
-  & .large-9 {
-    padding-left: 0;
-    padding-right: 0;
-  }
   & p {
     color: #ddd;
     margin: 0;
@@ -368,6 +364,16 @@ span.ctrl {
       background-color: darken(#18548d, 5%);
     }
   }
+}
+
+.wrapper,
+.top-bar,
+.top-bar-section .has-form,
+.top-bar-section li a:not(.button) {
+  background-color: $primary-color;
+  -webkit-box-shadow: inset 0 -10px 20px -10px rgba(0,0,0, 0.4);
+       -moz-box-shadow: inset 0 -10px 20px -10px rgba(0,0,0, 0.4);
+            box-shadow: inset 0 -10px 20px -10px rgba(0,0,0, 0.4);
 }
 
 @media only screen and (max-width: 939px) {
