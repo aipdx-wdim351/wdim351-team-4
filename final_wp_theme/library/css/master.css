@@ -1,0 +1,236 @@
+/* minified reset */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+
+
+
+/* wordpress alignment, image and caption stuff */
+.alignleft,.alignright {
+    display: inline-block;
+}
+
+    .alignleft {
+        float: left;
+        margin: 0 15px 15px 0;
+    }
+    
+    .alignright {
+        float: right;
+        margin: 0 0 15px 15px;
+    }
+    
+    .alignnone {
+        margin: 5px 15px 15px 0;
+    }
+    
+    .aligncenter {
+        display: block;
+        margin: 15px auto;
+    }
+    
+.wp-caption {
+    background: rgba(0,0,0,0.1);
+    border: 1px rgba(0,0,0,0.3) solid;
+    padding: 15px;
+    font-size: 0.85em;
+    text-align: center;
+}
+
+    .wp-caption img {
+        border: 1px rgba(0,0,0,0.3) solid;
+        margin: 0 auto 15px auto;
+        max-width: 98.5%;
+        width: auto;
+        
+    }
+	
+	html, body {
+		height: 100%;
+	}
+	
+	.whole-wrapper {
+		min-height: 100%;
+		height: auto !important;
+		height: 100%;
+		margin: 0 auto -60px;
+	}
+	
+	footer, .push {
+		height: 60px;
+	}
+	
+	
+/* header adjustments  */
+
+#prev, #next {
+	cursor: pointer;
+}
+.small-12.large-8.global-nav {
+	background-color: #ed6456;
+	display: none;
+	padding: 0px;
+}
+.global-nav ul#menu-global {
+	margin-bottom: 0px;
+}
+.pager span {
+	display: block;
+	background: url('../img/pager.png') 0 0 no-repeat;
+	width: 14px;
+	height: 13px;
+	text-indent: -9999px;
+	float: left;
+	margin-right: 5px;
+	cursor: pointer;
+}
+.pager span.cycle-pager-active {
+	background: url('../img/pager_hover.png') 0 0 no-repeat;
+}
+.page-header {
+	min-height: 78px;
+	line-height: 78px;
+	background: url("../img/subtle_grunge.png") top left repeat;
+	text-align: center;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+}
+
+.footer-info {
+	margin-top: 15px;
+	text-align: right;
+	color: #a4a4a4;
+	line-height: 1.1;
+	margin-bottom: 0px;
+}
+.row.sub-head {
+	margin-top: 25px;
+}
+.sub-nav-callouts {
+	border-top: 1px solid #ccc;
+	margin-top: 10px;
+}
+.sub-nav-callouts li {
+	border-bottom: 1px solid #ccc;
+	overflow: hidden;
+}
+.sub-nav-callouts h3 {
+	line-height: 1.1;
+	margin: 6px 0;
+	float: left;
+}
+
+.sub-nav-callouts .round.button.view-more.expand {
+	float:right;
+	width: 20%;
+	padding: 7px 0;
+	min-width: 100px;
+	margin: 2px 3px 0 0;
+}
+.tweet a[href*="twitter"] {
+	background: none;
+}
+.tweet a[href*="twitter"]:hover{
+	background: none;
+	color: #ff0000;
+}
+.tweet a.tweet_avatar {
+	display: none;
+}
+.tweet span.tweet_time a {
+	color: #999;
+	font-style: italic;
+}
+.tweet span.tweet_time:hover a {
+	color:  #ed6456;
+}
+ul.tweet_list li {
+	margin-bottom: 10px;
+}
+/*   Blog Page */
+.post.row {
+	margin-bottom: 50px;
+}
+
+.post.row .post-header {
+	margin: 0px 0px 20px 0px;
+	border-bottom: 1px solid #999;
+	padding-bottom: 10px;
+	line-height: 1;
+}
+
+.post.row .post-header a {
+	color: #666;
+	-webkit-transition: all 0.15s linear;
+  -moz-transition: all 0.15s linear;
+  transition: all 0.15s linear;
+}
+.post.row .post-header a:hover {
+	color: #ed6456;
+}
+
+.post.row .large-4 img {
+	margin-top: 35px;
+}
+
+.post.row .large-4 img,
+.shadowed-img {
+	-moz-box-shadow: 1px 1px 9px #666;
+	-webkit-box-shadow: 1px 1px 9px #666;
+	box-shadow: 1px 1px 9px #666;
+}
+
+/* Activtrax page */
+
+.spaced-row.row {
+	margin: 30px auto 60px auto;
+}
+
+/* Services page */
+
+.services {
+	text-align: center;
+}
+
+/* Contact page */
+
+.contact.spaced-row.row {
+	margin: 30px auto 0 auto;
+}
+
+.contact-wrapper {
+	color: #fff;
+	background-color: #ed6456;
+	padding: 100px 0;
+}
+
+.contact-wrapper h1,
+.contact-wrapper h3 {
+	color: #fff;
+}
+
+.contact-wrapper h3 {
+	border-bottom: 2px solid #BA4E43;
+}
+
+.contact-wrapper p {
+	margin: 0;
+	font-size: 18px;
+}
+
+.hi {
+	font-size: 72px;
+	line-height: 1;
+	margin-top: 0;
+	margin-bottom: 15px;
+}
+
+.dark-red {
+	color: #BA4E43;
+	-moz-text-shadow: inset 1px 1px 9px rgba(0,0,0,0.25);
+	-webkit-text-shadow: inset 1px 1px 9px rgba(0,0,0,0.25);
+	text-shadow: inset 1px 1px 9px rgba(0,0,0,0.25);
+}
+
+.map {
+	border: 40px solid #ed6456;
+	border-bottom: none;
+}
